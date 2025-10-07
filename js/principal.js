@@ -9,9 +9,12 @@ var peso = tdPeso.textContent;
 console.log(paciente);
 console.log(peso);
 
-// proxima aula verificar esse 
-var tdAltura = document.querySelector(".info-altura");
+// 07/10/2025
+var tdAltura = document.querySelector("#primeiro-paciente");
+var altura = document.querySelector(".info-altura");
 var altura = tdAltura.textContent;
 console.log(altura);
+
+
 
 
