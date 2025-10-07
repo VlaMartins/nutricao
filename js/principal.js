@@ -5,6 +5,7 @@ titulo.textContent = ("Aparecida Nutricionista");
 
 var paciente = document.querySelector("#primeiro-paciente");
 var tdNome = document.querySelector(".info-nome");
+var nome = tdNome.textContent; 
 console.log(tdNome);
 
 var tdPeso = document.querySelector(".info-peso");
