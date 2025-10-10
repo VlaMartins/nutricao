@@ -22,6 +22,8 @@ tdImc.textContent = imc;
 console.log(imc);
  
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+var pesoEhValido = true;
+var alturaEhValida = true;
 
 if (peso < 0 || peso > 1000) {
     console.log("Peso inválido");
@@ -33,8 +35,7 @@ if (altura < 0 || altura > 3.00) {
     alturaEhValida = false;
 }
 
-var pesoEhValido = true;
-var alturaEhValida = true;
+
 
 
 
