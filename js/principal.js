@@ -17,8 +17,6 @@ var altura = tdAltura.textContent;
 console.log(altura);
 
 var tdImc = paciente.querySelector(".info-imc");
-var imc = peso / (altura * altura); 
-tdImc.textContent = imc;
 console.log(imc);
  
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -35,6 +33,10 @@ if (altura < 0 || altura > 3.00) {
     alturaEhValida = false;
 }
 
+if (alturaEhValida && pesoEhValido){
+    var imc = peso / (altura * altura); 
+    tdImc.textContent = imc;
+}
 
 
 
