@@ -6,7 +6,7 @@ titulo.textContent = ("Aparecida Nutricionista");
 var pacientes = document.querySelectorAll(".paciente");
 
 for (var i = 0; i < pacientes.length; i++){
-   
+   console.pacientes[i];
     var paciente = pacientes[i]; 
 
     var tdNome = document.querySelector(".info-nome");
