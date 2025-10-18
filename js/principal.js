@@ -7,12 +7,9 @@ var pacientes = document.querySelectorAll(".paciente");
 
 for (var i = 0; i < pacientes.length; i++){
    console.log(pacientes[i]);
-     var paciente = pacientes[i]; 
+    var paciente = pacientes[i]; 
 
-    var tdNome = document.querySelector(".info-nome");
-    var nome = tdNome.textContent; 
-
-    var tdPeso = document.querySelector(".info-peso");
+     var tdPeso = document.querySelector(".info-peso");
     var peso = tdPeso.textContent;
 
     var tdAltura = document.querySelector(".info-altura");
