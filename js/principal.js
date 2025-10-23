@@ -48,7 +48,7 @@ for (var i = 0; i < pacientes.length; i++) {
 
 // titulo.addEventListener() adiciona um escutador de eventos. 
 // PRIMEIRO MOSTRAR ESSA - DEPOIS ALTERA-LA PARA FICAR ANONIMA
-titulo.addEventListener("click", mostraMensagem)
+titulo.addEventListener("click", mostraMensagem);
 // function mostraMensagem(){
 //     console.log("Olá, eu fui clicado");
 //     alert("Olá eu fui clicado.")
