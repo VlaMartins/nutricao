@@ -47,18 +47,22 @@ for (var i = 0; i < pacientes.length; i++) {
 // 23/10
 
 // titulo.addEventListener() adiciona um escutador de eventos. 
+// PRIMEIRO MOSTRAR ESSA - DEPOIS ALTERA-LA PARA FICAR ANONIMA
 titulo.addEventListener("click", mostraMensagem)
-function mostraMensagem(){
-    console.log("Olá, eu fui clicado");
-    alert("Olá eu fui clicado.")
-}
+// function mostraMensagem(){
+//     console.log("Olá, eu fui clicado");
+//     alert("Olá eu fui clicado.")
+// }
 
 // funcao anonima = a de cima mas diferente
 titulo.addEventListener("click", function(){
     alert("Ola eu fui clicado numa funcao anonima")
 })
 
-
-
+// EU QUERO CHAMAR UM EVENTO DE CLICK QUANDO CLICAR NO BOTAO ADICIONAR
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function(){
+    alert("Oi, cliquei no botão!")
+})
 
 
