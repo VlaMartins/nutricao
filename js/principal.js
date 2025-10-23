@@ -44,6 +44,13 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 }
 
+// 23/10
+
+// titulo.addEventListener() adiciona um escutador de eventos. 
+titulo.addEventListener("click", mostraMensagem)
+function mostraMensagem(){
+    console.log("Olá, eu fui clicado");
+}
 
 
 
