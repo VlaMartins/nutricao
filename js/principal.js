@@ -61,9 +61,9 @@ titulo.addEventListener("click", function(){
 
 // EU QUERO CHAMAR UM EVENTO DE CLICK QUANDO CLICAR NO BOTAO ADICIONAR
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
-botaoAdicionar.addEventListener("click", function(event){
+botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();
-    alert("Oi, eu sou o botão que foi clicado!"); 
-}
+    console.log("Oi eu sou o botao e fui clicado");
+});
 
 // ele está funcionando mas a pagina recarrega rapido pq e o comportamento esperado do botao e limpa automaticamente o console, entao por isso a gnt nao consegue ver no console.  Está certo, mas precisamos mudar o comportamento do botaão 
