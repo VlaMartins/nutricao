@@ -62,8 +62,9 @@ titulo.addEventListener("click", function(){
 // EU QUERO CHAMAR UM EVENTO DE CLICK QUANDO CLICAR NO BOTAO ADICIONAR
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function(event){
-    // alert("Oi, cliquei no botão!"); 
+    
     event.preventDefault();
+    alert("Oi, eu sou o botão que foi clicado!"); 
 
 })
 
