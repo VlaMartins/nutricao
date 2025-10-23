@@ -57,7 +57,7 @@ titulo.addEventListener("click", mostraMensagem);
 // funcao anonima = a de cima mas diferente
 titulo.addEventListener("click", function(){
     alert("Ola eu fui clicado numa funcao anonima")
-})
+}
 
 // EU QUERO CHAMAR UM EVENTO DE CLICK QUANDO CLICAR NO BOTAO ADICIONAR
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
