@@ -53,6 +53,11 @@ function mostraMensagem(){
     alert("Olá eu fui clicado.")
 }
 
+// funcao anonima = a de cima mas diferente
+titulo.addEventListener("click", function(){
+    alert("Ola eu fui clicado numa funcao anonima")
+})
+
 
 
 
