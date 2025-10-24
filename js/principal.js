@@ -29,13 +29,15 @@ for (var i = 0; i < pacientes.length; i++) {
         tdImc.textContent = "Peso inválido";
         // paciente.style.backgroundColor = "red";
         paciente.classList.add("paciente-invalido");
+        paciente.style.backgroundColor = "lightcoral";
     }
 
     if (altura <= 0 || altura >= 3.00) {
         console.log("Altura inválida!");
         alturaEhValida = false;
         tdImc.textContent = "Altura inválida";
-         paciente.classList.add("paciente-invalido");
+        paciente.classList.add("paciente-invalido");
+        paciente.style.backgroundColor = "lightblue";
     }
 
   if (alturaEhValida && pesoEhValido) {
