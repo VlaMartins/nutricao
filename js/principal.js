@@ -9,7 +9,7 @@ titulo.textContent = ("Aparecida Nutricionista");
 var pacientes = document.querySelectorAll(".paciente");
 
 for (var i = 0; i < pacientes.length; i++) {
-
+    
     var paciente = pacientes[i];
 
     var tdPeso = paciente.querySelector(".info-peso");
@@ -94,3 +94,4 @@ botaoAdicionar.addEventListener("click", function(event) {
 });
 
 // ele está funcionando mas a pagina recarrega rapido pq e o comportamento esperado do botao e limpa automaticamente o console, entao por isso a gnt nao consegue ver no console.  Está certo, mas precisamos mudar o comportamento do botaão 
+
