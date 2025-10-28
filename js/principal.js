@@ -63,13 +63,15 @@ var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();
     alert("Oi eu sou o botao e fui clicado");
-   // var form = document.querySelector("#form-adiciona");
+    var form = document.querySelector("#form-adiciona");
 
-//     var nome = form.nome.value;
-//     var peso = form.peso.value;
-//     var altura = form.altura.value;
-//     var gordura = form.gordura.value;
+    var nome = form.nome.value;
+    var peso = form.peso.value;
+    var altura = form.altura.value;
+    var gordura = form.gordura.value;
 
+    //28/10
+    
 //     var pacienteTr = document.createElement("tr");
 
 //     var nomeTd = document.createElement("td");
