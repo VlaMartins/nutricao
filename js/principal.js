@@ -72,19 +72,21 @@ botaoAdicionar.addEventListener("click", function(event) {
 
     //28/10
     
-//     var pacienteTr = document.createElement("tr");
+    var pacienteTr = document.createElement("tr");
 
-//     var nomeTd = document.createElement("td");
-//     var pesoTd = document.createElement("td");
-//     var alturaTd = document.createElement("td");
-//     var gorduraTd = document.createElement("td");
-//     var imcTd = document.createElement("td");
+    var nomeTd = document.createElement("td");
+    var pesoTd = document.createElement("td");
+    var alturaTd = document.createElement("td");
+    var gorduraTd = document.createElement("td");
+    var imcTd = document.createElement("td");
 
-//     nomeTd.textContent = nome;
-//     pesoTd.textContent = peso;
-//     alturaTd.textContent = altura;
-//     gorduraTd.textContent = gordura;
+    nomeTd.textContent = nome;
+    pesoTd.textContent = peso;
+    alturaTd.textContent = altura;
+    gorduraTd.textContent = gordura;
 
+
+    
 //     pacienteTr.appendChild(nomeTd);
 //     pacienteTr.appendChild(pesoTd);
 //     pacienteTr.appendChild(alturaTd);
