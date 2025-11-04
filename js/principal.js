@@ -8,7 +8,7 @@ titulo.textContent = ("Aparecida Nutricionista");
 
 var pacientes = document.querySelectorAll(".paciente");
 
-for (var i = 0; i < pacientes.length; i++) {
+for (var i = 0; i < pacientes.length; i++) { // abre chaves do for 
     
     var paciente = pacientes[i];
 
@@ -41,16 +41,9 @@ for (var i = 0; i < pacientes.length; i++) {
         var imc = peso / (altura * altura);
         tdImc.textContent = imc.toFixed(2);
     }
-}
+} // fecha chaves do for 
 
 // 23/10
-
-// titulo.addEventListener() adiciona um escutador de eventos. 
-// PRIMEIRO MOSTRAR ESSA - DEPOIS ALTERA-LA PARA FICAR ANONIMA
-// titulo.addEventListener("click", mostraMensagem);
-// function mostraMensagem(){
-//     alert("Olá eu fui clicado.")
-// }
 
 // funcao anonima = a de cima mas diferente
 titulo.addEventListener("click", function(){
@@ -60,9 +53,9 @@ titulo.addEventListener("click", function(){
 
 // EU QUERO CHAMAR UM EVENTO DE CLICK QUANDO CLICAR NO BOTAO ADICIONAR
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
-botaoAdicionar.addEventListener("click", function(event) {
+botaoAdicionar.addEventListener("click", function(event) { //abre chaves do botao
     event.preventDefault();
-    alert("Oi eu sou o botao e fui clicado");
+   // alert("Oi eu sou o botao e fui clicado");
     var form = document.querySelector("#form-adiciona");
 
     var nome = form.nome.value;
@@ -93,7 +86,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     var tabela = document.querySelector("#tabela-pacientes");
 
     tabela.appendChild(pacienteTr);
-});
+}); //fecha chaves do botao e fecha o parenteses da funcao
 
 // ele está funcionando mas a pagina recarrega rapido pq e o comportamento esperado do botao e limpa automaticamente o console, entao por isso a gnt nao consegue ver no console.  Está certo, mas precisamos mudar o comportamento do botaão 
 
