@@ -1,8 +1,8 @@
-var botaoAdicionar = document.querySelector("#adicionar-paciente");
-botaoAdicionar.addEventListener("click", function(event) { //abre chaves do botao
+var botaoAdicionar = document.querySelector('#adicionar-paciente');
+botaoAdicionar.addEventListener('click', function(event) {
     event.preventDefault();
-    var form = document.querySelector("#form-adiciona");
-    var pacienteTr = obtemPacienteDoFormulario(form); /* verificar se aqui tem tr */
+    var form = document.querySelector('#form-adiciona');
+    var paciente = obtemPacienteDoFormulario(form);
 
     var pacienteTr = document.createElement("tr");
 
@@ -25,6 +25,7 @@ botaoAdicionar.addEventListener("click", function(event) { //abre chaves do bota
     pacienteTr.appendChild(imcTd); /*faltava esse dai nao ia mostrar msm*/ 
 
     var tabela = document.querySelector("#tabela-pacientes");
+
 
     tabela.appendChild(pacienteTr);
 }); //fecha chaves do botao e fecha o parenteses da funcao
