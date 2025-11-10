@@ -4,10 +4,7 @@ botaoAdicionar.addEventListener("click", function(event) { //abre chaves do bota
    // alert("Oi eu sou o botao e fui clicado");
     var form = document.querySelector("#form-adiciona");
 
-    var nome = form.nome.value;
-    var peso = form.peso.value;
-    var altura = form.altura.value;
-    var gordura = form.gordura.value;
+    var paciente = obtemPacienteDoFormulario(form);
 
     //28/10
     
@@ -34,3 +31,13 @@ botaoAdicionar.addEventListener("click", function(event) { //abre chaves do bota
 
     tabela.appendChild(pacienteTr);
 }); //fecha chaves do botao e fecha o parenteses da funcao
+
+function obtemPacienteDoFormulario(form){
+    var paciente = {
+         nome: form.nome.value,
+         peso: form.peso.value,
+         altura: form.altura.value,
+         gordura: form.gordura.value
+    }
+    return paciente;
+}
