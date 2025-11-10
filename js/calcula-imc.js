@@ -2,9 +2,7 @@ var titulo = document.querySelector("h1");
 titulo.textContent = ("Vlá Nutrição");
 
 var pacientes = document.querySelectorAll(".paciente");
-
 for (var i = 0; i < pacientes.length; i++) { // abre chaves do for 
-    
     var paciente = pacientes[i];
 
     var tdPeso = paciente.querySelector(".info-peso");
