@@ -28,7 +28,7 @@ botaoAdicionar.addEventListener("click", function(event) {
 
     var tabela = document.querySelector("#tabela-pacientes");
 
-    tabela.appendChild(paciente);
+    tabela.appendChild(pacienteTr);//mudei aqui e tirei o tr
 
 });
 
