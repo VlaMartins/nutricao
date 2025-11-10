@@ -22,7 +22,7 @@ botaoAdicionar.addEventListener("click", function(event) { //abre chaves do bota
     pacienteTr.appendChild(pesoTd);
     pacienteTr.appendChild(alturaTd);
     pacienteTr.appendChild(gorduraTd);
-    pacienteTr.appendChild(imcTd); /*faltava*/ 
+    pacienteTr.appendChild(imcTd); /*faltava esse dai nao ia mostrar msm*/ 
 
     var tabela = document.querySelector("#tabela-pacientes");
 
