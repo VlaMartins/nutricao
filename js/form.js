@@ -27,7 +27,8 @@ function obtemPacienteDoFormulario(form) {
 // criar uma funcao que monte a tr do paciente 
 function montaTr(paciente) {
     var pacienteTr = document.createElement("tr");
-
+    pacienteTr.classList.add("paciente");
+    
     var nomeTd = document.createElement("td");
     var pesoTd = document.createElement("td");
     var alturaTd = document.createElement("td");
