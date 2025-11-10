@@ -8,7 +8,7 @@ body{
 }
 
 header{
-	background-color: #333;
+	background-color: #f604b6;
 	height: 3em;
 	color: #FFF;
 	margin-bottom: 1em;
@@ -47,7 +47,7 @@ section h2{
 	font-size: 3em;
 	display: block;
 	padding-bottom: .5em;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #fcd5ec;
 	margin-bottom: .5em;
 }
 
@@ -61,17 +61,17 @@ table{
 td, th {
 	padding: .7em;
 	margin: 0;
-	border: 1px solid #ccc;
+	border: 1px solid #fcd5ec;
 	text-align: center;
 }
 
 th{
 	font-weight: bold;
-	background-color: #EEE;
+	background-color: #fbe1f0;
 }
 
 label{
-	color: #555;
+	color: #f604b6;
 	display: block;
 	margin-bottom: .2em;
 }
@@ -80,7 +80,7 @@ label{
 	margin: 0;
 	padding-bottom: 1em;
 	width: 100%;
-	border: 1px solid #ccc;
+	border: 1px solid  #fcd5ec;
 	padding: .7em;
 	width: 100%;
 }
