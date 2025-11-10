@@ -4,8 +4,6 @@ botaoAdicionar.addEventListener("click", function(event) { //abre chaves do bota
     var form = document.querySelector("#form-adiciona");
     var paciente = obtemPacienteDoFormulario(form);
 
-    //28/10
-    
     var pacienteTr = document.createElement("tr");
 
     var nomeTd = document.createElement("td");
@@ -32,11 +30,11 @@ botaoAdicionar.addEventListener("click", function(event) { //abre chaves do bota
 
 function obtemPacienteDoFormulario(form){
     var paciente = {
-         nome: form.nome.value,
-         peso: form.peso.value,
-         altura: form.altura.value,
-         gordura: form.gordura.value,
-         imc: calculaImc(form.peso.value, form.altura.value)
+        nome: form.nome.value,
+        peso: form.peso.value,
+        altura: form.altura.value,
+        gordura: form.gordura.value,
+        imc: calculaImc(form.peso.value, form.altura.value)
     }
     return paciente;
 }
