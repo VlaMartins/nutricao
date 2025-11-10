@@ -1,36 +1,39 @@
-var botaoAdicionar = document.querySelector('#adicionar-paciente');
-botaoAdicionar.addEventListener('click', function(event) {
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();
-    var form = document.querySelector('#form-adiciona');
+
+    var form = document.querySelector("#form-adiciona");
+
     var paciente = obtemPacienteDoFormulario(form);
 
+    //cria a tr e a td do paciente
     var pacienteTr = document.createElement("tr");
-
     var nomeTd = document.createElement("td");
     var pesoTd = document.createElement("td");
     var alturaTd = document.createElement("td");
     var gorduraTd = document.createElement("td");
     var imcTd = document.createElement("td");
 
+    
     nomeTd.textContent = nome;
     pesoTd.textContent = peso;
     alturaTd.textContent = altura;
     gorduraTd.textContent = gordura;
-    imcTd.textContent = calculaImc(peso,altura);
+    imcTd.textContent = calculaImc(peso,altura);/*xxxxxxx */
 
     pacienteTr.appendChild(nomeTd);
     pacienteTr.appendChild(pesoTd);
     pacienteTr.appendChild(alturaTd);
     pacienteTr.appendChild(gorduraTd);
-    pacienteTr.appendChild(imcTd); /*faltava esse dai nao ia mostrar msm*/ 
+    pacienteTr.appendChild(imcTd);/*xxxxxxx */
 
     var tabela = document.querySelector("#tabela-pacientes");
 
-
     tabela.appendChild(pacienteTr);
-}); //fecha chaves do botao e fecha o parenteses da funcao
 
-function obtemPacienteDoFormulario(form){
+});
+
+function obtemPacienteDoFormulario(form) {
     var paciente = {
         nome: form.nome.value,
         peso: form.peso.value,
