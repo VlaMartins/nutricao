@@ -1,9 +1,7 @@
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function(event) { //abre chaves do botao
     event.preventDefault();
-   // alert("Oi eu sou o botao e fui clicado");
     var form = document.querySelector("#form-adiciona");
-
     var paciente = obtemPacienteDoFormulario(form);
 
     //28/10
