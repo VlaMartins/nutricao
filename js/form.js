@@ -1,34 +1,11 @@
-var botaoAdicionar = document.querySelector("#adicionar-paciente");
-botaoAdicionar.addEventListener("click", function(event) {
+var botaoAdicionar = document.querySelector('#adicionar-paciente');
+botaoAdicionar.addEventListener('click', function(event) {
     event.preventDefault();
-
-    var form = document.querySelector("#form-adiciona");
+    var form = document.querySelector('#form-adiciona');
     var paciente = obtemPacienteDoFormulario(form);
 
-    //cria a tr e a td do paciente
-    var pacienteTr = montaTr(paciente);
-
-    var tabela = document.querySelector("#tabela-pacientes");
-
-    tabela.appendChild(pacienteTr);
-});
-
-function obtemPacienteDoFormulario(form) {
-    var paciente = {
-        nome: form.nome.value,
-        peso: form.peso.value,
-        altura: form.altura.value,
-        gordura: form.gordura.value,
-        imc: calculaImc(form.peso.value, form.altura.value)
-    }
-    return paciente;
-}
-
-// criar uma funcao que monte a tr do paciente 
-function montaTr(paciente) {
     var pacienteTr = document.createElement("tr");
-    pacienteTr.classList.add("paciente");
-    
+
     var nomeTd = document.createElement("td");
     var pesoTd = document.createElement("td");
     var alturaTd = document.createElement("td");
@@ -39,13 +16,27 @@ function montaTr(paciente) {
     pesoTd.textContent = peso;
     alturaTd.textContent = altura;
     gorduraTd.textContent = gordura;
-    imcTd.textContent = paciente.imc;/*xxxxxxx */
+    imcTd.textContent = calculaImc(peso,altura);
 
     pacienteTr.appendChild(nomeTd);
     pacienteTr.appendChild(pesoTd);
     pacienteTr.appendChild(alturaTd);
     pacienteTr.appendChild(gorduraTd);
-    pacienteTr.appendChild(imcTd);/*xxxxxxx */
+    pacienteTr.appendChild(imcTd); /*faltava esse dai nao ia mostrar msm*/ 
 
-     return pacienteTr;  /*add */
+    var tabela = document.querySelector("#tabela-pacientes");
+
+
+    tabela.appendChild(pacienteTr);
+}); //fecha chaves do botao e fecha o parenteses da funcao
+
+function obtemPacienteDoFormulario(form){
+    var paciente = {
+        nome: form.nome.value,
+        peso: form.peso.value,
+        altura: form.altura.value,
+        gordura: form.gordura.value,
+        imc: calculaImc(form.peso.value, form.altura.value)
+    }
+    return paciente;
 }
